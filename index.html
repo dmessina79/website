@@ -13,6 +13,7 @@
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
@@ -24,11 +25,16 @@
 </head>
 
 <body>   
+
+    <button onclick="topFunction()" id="topscroll-button"  title="Go to top">Top</button>
+
     <section class="parallax">
         <div class="parallax-inner">
             <h3>Hey, I'm</h3>
             <h1><span class="lines">David Messina</span></h1>
-            
+            <div class="block-button-container">
+                <button class="resume-button-format"><a href="dm/David-Messina-Resume-2018.pdf" class="resume-button-element" target="_blank">Download Resume</a></button>
+            </div>
         </div>
     </section>
 
@@ -52,12 +58,13 @@
 
     <!-- About Section -->
     <div class="container">
-        
-        <div id="about" class="row about-adjust-top">
-            <div class="col-sm-12">
-                <section class="section-title">
-                        <h2 class="section-text">About Me</h2>
-                </section>
+        <div class="row">
+            <div id="about" class="row about-adjust-top">
+                <div class="col-sm-12">
+                    <section class="section-title">
+                            <h2 class="section-text">About Me</h2>
+                    </section>
+                </div>
             </div>
         </div>
 
@@ -80,12 +87,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus rerum reprehenderit sint animi iusto sunt placeat, vel cum incidunt asperiores quidem amet dignissimos dolore tempora, accusantium nam vero eos. Perferendis dicta vel facere blanditiis temporibus rem. Repellendus esse omnis nam iusto ullam maxime fugiat perferendis repellat similique nemo tempore reiciendis minus soluta dignissimos beatae, pariatur molestias magni magnam laboriosam quisquam. Odit est dolore rerum tempore voluptatum officia harum. Natus veritatis, eos nesciunt fuga quia earum nam minima placeat necessitatibus aliquam quasi sit beatae vero. Mollitia odit quasi minima recusandae sapiente natus ipsam, quaerat ratione molestias suscipit perspiciatis aliquid voluptate rem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus rerum reprehenderit sint animi iusto sunt placeat, vel cum incidunt asperiores quidem amet dignissimos dolore tempora, accusantium nam vero eos. Perferendis dicta vel facere blanditiis temporibus rem. Repellendus esse omnis nam iusto ullam maxime fugiat perferendis repellat similique nemo tempore reiciendis minus soluta dignissimos beatae, pariatur molestias magni magnam laboriosam quisquam. Odit est dolore rerum tempore voluptatum officia harum. Natus veritatis, eos nesciunt fuga quia earum nam minima placeat necessitatibus aliquam quasi sit beatae vero. Mollitia odit quasi minima recusandae sapiente natus ipsam, quaerat ratione molestias suscipit perspiciatis aliquid voluptate rem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus rerum reprehenderit sint animi iusto sunt placeat, vel cum incidunt asperiores quidem amet dignissimos dolore tempora, accusantium nam vero eos. Perferendis dicta vel facere blanditiis temporibus rem. Repellendus esse omnis nam iusto ullam maxime fugiat perferendis repellat similique nemo tempore reiciendis minus soluta dignissimos beatae, pariatur molestias magni magnam laboriosam quisquam. Odit est dolore rerum tempore voluptatum officia harum. Natus veritatis, eos nesciunt fuga quia earum nam minima placeat necessitatibus aliquam quasi sit beatae vero. Mollitia odit quasi minima recusandae sapiente natus ipsam, quaerat ratione molestias suscipit perspiciatis aliquid voluptate rem!</p>
-            </div>
-
+            
             <div id="resume" class="row about-adjust-top section-padding">
 
                 <div class="row section-padding">
@@ -129,15 +131,19 @@
                 <div class="col-sm-6">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel quia quos, odio repellendus corporis neque facere numquam consequatur error velit esse sapiente doloribus, culpa exercitationem reiciendis nulla amet! Assumenda totam vero quisquam doloremque dolore deleniti veniam sint nesciunt exercitationem in eos, eveniet corrupti? Voluptatum accusamus laudantium nam cum maxime, ad dignissimos illo consectetur sed quibusdam a nulla blanditiis corporis, sunt quo delectus voluptates molestias fugiat impedit provident odio nostrum sint? Animi voluptatibus neque esse, ullam debitis beatae saepe voluptatem, eos assumenda nulla distinctio id voluptatum corrupti! Nihil sit adipisci numquam iste vitae pariatur, officiis libero quisquam a molestias. Illo.</p>
                 </div>
+            </div>
                 
             <!-- Contact Section -->
-            <div id="contact" class="row about-adjust-top">
-                <div class="col-md-12">
-                    <section class="section-title">
-                            <h2 class="section-text">Contact</h2>
-                    </section>
+            <div class="row">
+                <div id="contact" class="row about-adjust-top">
+                    <div class="col-md-12">
+                        <section class="section-title">
+                                <h2 class="section-text">Contact</h2>
+                        </section>
+                    </div>
                 </div>
             </div>
+
 
             <div class="row">
                 <div class="col-md-12">
@@ -146,13 +152,14 @@
                     <p>Last Name:<input id="lastName"></p>
                     <p>Email Address:<input id"emailAddress"></p>
                 </div>
+            </div>
             <!-- End Contact Section -->
 
 
         </div>
     </div>
     <!-- End About Section -->
-    
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

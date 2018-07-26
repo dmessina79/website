@@ -12,10 +12,10 @@ firstLink.addEventListener('click', function(e){
     // prevent the default click at an anchor
     e.preventDefault();
     // get the top psotiion of our element
-    var resumeTop = document.getElementById('about').offsetTop;
+    var aboutTop = document.getElementById('about').offsetTop;
     //scroll the windows to that top position
     window.scrollTo({
-        top: resumeTop,
+        top: aboutTop,
         behavior: 'smooth'
     })
 });
@@ -47,3 +47,21 @@ thirdLink.addEventListener('click', function(e){
         behavior: 'smooth'
     })
 });
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        document.getElementById("topscroll-button").style.display = "block";
+    } else {
+        document.getElementById("topscroll-button").style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+        })
+}

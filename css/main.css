@@ -8,6 +8,19 @@ body{
     padding-top: 75px;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.section-padding {
+    margin-top: -40px;
+}
+
+.adjust-top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Parallax'ing */
 
 .parallax {
@@ -53,36 +66,34 @@ section.parallax h3  {
 
 .block-button-container {
     text-align: center;
-    padding: 25px;
+    padding: 18px;
 }
 
 .block-button-container a {
-    font-family: normal 25px Open Sans;
     color: white;
-    font-size: 20px;
     padding: 20px;
     text-decoration: none;
 }
 
-.resume-button-format {
-    background-color: transparent;
-    border: 2px solid white;
-    text-decoration: none;
-    padding: 20px;
-}
-
-.resume-button-format:hover {
+.block-button-container a:hover {
+    color: black;
     background-color: white;
     transition: 0.1s linear;
 }
 
-.resume-button-format a:hover {
-    color: black;
+.resume-button-format {
+    background-color: transparent;
+    border: none;
     text-decoration: none;
-    transition: 0.1s linear;
+    padding: 20px;
 }
 
-/* Home Page Navigation */
+.resume-button-format a {
+    border: 2px solid white;
+    font-size: 15px;
+}
+
+/* Navigation */
 
 .site-logo {
     font: normal 25px Josefin Sans;
@@ -145,14 +156,12 @@ section.parallax h3  {
 
 /* Resume Section */
 
-.heading-format {
-    text-transform: uppercase;
+.section-margins {
+    margin-top: 75px;
 }
 
-.section-padding {
-
-
-    padding-bottom: 20px;
+.exp-padding {
+    padding-left: 75px;
 }
 
 .resume-section-title-padding {
@@ -166,6 +175,10 @@ section.parallax h3  {
 
 .heading-format span {
     font-weight: 400;
+}
+
+ul {
+    line-height: 28px;
 }
 
 li {
@@ -210,3 +223,79 @@ li {
 #topscroll-button:hover {
     background-color: #555;
   }
+
+@media only screen and (max-width: 767px) {
+
+    .site-logo {
+        font: normal 20px Josefin Sans;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .myphoto {
+        display: none;
+    }
+
+    section.parallax h1  {
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding-bottom: 25px;
+    }
+
+    section.parallax h3  {
+        font-size: 18px;
+        font-style: italic;
+        margin: auto;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .parallax-inner {
+        padding-top: 20%;
+        padding-bottom: 26%;
+    }
+
+    .lines::before {
+        content: " ";
+        width: 80px;
+        line-height: 2px;
+        color: white;
+    }
+
+    .block-button-container {
+        text-align: center;
+        padding: 18px;
+    }
+
+    .block-button-container a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    .block-button-container a:hover {
+        color: black;
+        background-color: white;
+        transition: 0.1s linear;
+    }
+
+    .resume-button-format {
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        padding: 18px;
+    }
+
+    .resume-button-format a {
+        border: 2px solid white;
+        font-size: 15px;
+    }
+}

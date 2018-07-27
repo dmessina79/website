@@ -57,12 +57,21 @@ section.parallax h3  {
     padding-bottom: 26%;
 }
 
+/* 
 .lines::before {
     content: " ";
     width: 80px;
     line-height: 2px;
     color: white;
 }
+
+.lines::before {
+    content: " ";
+    width: 80px;
+    line-height: 2px;
+    color: white;
+}
+*/
 
 .block-button-container {
     text-align: center;
@@ -90,7 +99,7 @@ section.parallax h3  {
 
 .resume-button-format a {
     border: 2px solid white;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 /* Navigation */
@@ -109,6 +118,10 @@ section.parallax h3  {
     border-bottom: 1px solid lightgrey;
     border-top: 1px solid lightgrey;
     background-attachment: scroll;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 .navbar-brand {
@@ -231,7 +244,34 @@ li {
     }
 
     .navbar-nav {
-        display: none;
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.5s linear;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar-nav.is-visible {
+        display: block;
+        height: 135px;
+    }
+
+    .hamburger-icon {
+        color: black;
+        padding: 30px 10px 0 0;
+        text-decoration: none;
+        font-size: 34px;
+        line-height: 70px;
+    }
+
+    .mobile-nav {
+        display: block;
+        float: right;
+    }
+
+    .mobile-nav:hover {
+        text-decoration: none;
+        cursor: pointer;
     }
 
     .myphoto {

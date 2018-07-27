@@ -48,7 +48,7 @@ thirdLink.addEventListener('click', function(e){
     })
 });
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Scrolling down 250 pixels and button will appear to scroll to the top of the page
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -57,11 +57,17 @@ function scrollFunction() {
     } else {
         document.getElementById("topscroll-button").style.display = "none";
     }
-}
+};
 
 function topFunction() {
     window.scroll({
         top: 0,
         behavior: 'smooth'
         })
-}
+};
+
+var dm = document.getElementsByClassName('navbar-nav')[0];
+
+document.getElementsByClassName('mobile-nav')[0].addEventListener('click', function() {
+    dm.classList.toggle('is-visible');
+});
